@@ -1,0 +1,7 @@
+Summer 24 
+COP 3503C Assignment 3 
+This program is written by: Devon Villalona
+
+## Testing Strategy
+
+The testing strategy for the disjoint set problem involves validating the program against various test cases to ensure correctness and performance. The tests are divided into four categories: Basic Functional Tests, Edge Cases, Complex Networks, and Randomized Tests. Basic Functional Tests handle simple cases to ensure the program works as expected. Edge Cases test boundary conditions, such as minimal or disconnected networks. Complex Networks evaluate performance with large networks, and Randomized Tests ensure robustness with randomly generated data. Specific test cases include verifying sample inputs/outputs, checking initial connectivity, handling networks with no connections, and performance testing with large networks. The process involves compiling and running the program, comparing outputs with expected results using the `diff` command, and debugging as necessary. This strategy ensures the program meets requirements and performs correctly under various conditions.

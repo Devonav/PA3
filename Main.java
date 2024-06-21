@@ -1,3 +1,9 @@
+/*
+Summer 24
+COP 3503C Assignment 3
+This program is written by: Devon Villalona*/
+
+
 import java.util.*;
 
 public class Main {
@@ -7,6 +13,7 @@ public class Main {
     static List<Integer> destructions = new ArrayList<>();
     static long initialConnectivity;
 
+    // Main method to read input and call the necessary methods to solve the problem and print the results in the correct order  
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
@@ -54,7 +61,8 @@ public class Main {
             int u = connections.get(connIdx)[0];
             int v = connections.get(connIdx)[1];
             addEdge(u, v);
-            results.add(calculateConnectivity());
+            long connectivity = calculateConnectivity();
+            results.add(connectivity);
         }
 
         // Print results in the correct order
@@ -91,7 +99,7 @@ public class Main {
     static void addEdge(int u, int v) {
         union(u, v);
     }
-
+    // Calculate the connectivity of the network by summing the square of the size of each connected component 
     static long calculateConnectivity() {
         long connectivity = 0;
         for (int i = 1; i <= n; i++) {
